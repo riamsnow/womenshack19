@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavMenuComponent implements OnInit {
 
+  isExpanded = false;
+
   constructor() { }
 
   ngOnInit() {
   }
+  collapse() {
+    this.isExpanded = false;
+  }
 
+  toggle() {
+    this.isExpanded = !this.isExpanded;
+  }
 }
